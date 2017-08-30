@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Susanna Peek">
+	<meta name="description" content="Growth Hacker - webpage to present yourself">
+	<title>Susanna</title>
+	<link rel="stylesheet" href="sheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="background">
+		<div class="filter">
+			<div id="content">
+				<p id="photo" class="first" title="Awesome!"></p>
+				<!--What describes you best in 5 words-->
+				<h1>ethereal | shy | sincere | exuberant | witty</h1>
+				<!--One sentence to describe you a bit more-->
+				<p id="sub">Actually I'm just a simple girl from <a id="est" target="_blank" href="https://en.wikipedia.org/wiki/Estonia">Estonia</a>.</p>
+				<!--Your main motivation for joining the Tribe?-->
+				<p id="p1">"The <i>expert</i> in anything was once a <i>beginner</i>."</p>
+				<!--What makes you unique-->
+				<p id="p2">I am <i>unique</i> because I always tell the truth, even when I lie.</p>
+				<!--And something funny of course, about you-->
+				<p id="p3">And I can't ride a bike :(</p>
+				<a target="_blank" href="https://www.facebook.com/susanna.peek"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+				<a target="_blank" href="https://www.instagram.com/susannapeek"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+				<a target="_blank" href="https://twitter.com/SusannaPeek"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
+			</div>
+		</div>
+	</div>
+
+<script>
+	$("#p1").mouseenter(function() {
+		$("#photo").attr("class", "second");
+	});
+	$("#p2").mouseenter(function() {
+		$("#photo").attr("class", "third");
+	});
+	$("#p3").mouseenter(function() {
+		$("#photo").attr("class", "fourth");
+	});
+	$("#est").mouseenter(function() {
+		$("#photo").attr("class", "fifth");
+	});
+	$("#p1,#p2,#p3,#est").mouseleave(function() {
+		$("#photo").attr("class", "first");
+	});
+</script>
+
+</body>
+</html>
